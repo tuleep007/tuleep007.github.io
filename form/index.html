@@ -9,6 +9,12 @@
 </head>
 
 <body>
+    <?php
+if(isset($_GET["name"])){
+    echo "<p>Hi, " . $_GET["name"] . "</p>";
+}
+?>
+    
     <form method="post" action="<?php echo $_SERVER["PHP_SELF"];?>">
         <h1>Student Registration Form</h1>
         <section>
