@@ -8,11 +8,7 @@
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
-    <?php
-if(isset($_POST["username"])){
-    echo "<p>Hi, " . $_POST["username"] . "</p>";
-}
-?>
+
     <form method="POST" action="<?php echo $_SERVER["PHP_SELF"];?>">
         <h1>Student Registration Form</h1>
         <section>
