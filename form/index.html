@@ -7,8 +7,13 @@
     <title>Student Registration Form</title>
     <link href="style.css" rel="stylesheet">
 </head>
-    
-    <form method="post" action="<?php echo $_SERVER["PHP_SELF"];?>">
+<body>
+    <?php
+if(isset($_POST["name"])){
+    echo "<p>Hi, " . $_POST["name"] . "</p>";
+}
+?>
+    <form method="POST" action="<?php echo $_SERVER["PHP_SELF"];?>">
         <h1>Student Registration Form</h1>
         <section>
             <fieldset>
